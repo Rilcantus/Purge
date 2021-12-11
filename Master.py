@@ -78,7 +78,7 @@ class Funcs:
             name = name[1]
         else:
             name = name.split('"')
-            if '<noreply@kroger.com>' in name:
+            if '<noreply@company.com>' in name:
                 name = Funcs.noReplyCheck(body)
                 name = Funcs.emailSplitter(name)
             else:
